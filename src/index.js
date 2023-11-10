@@ -24,7 +24,10 @@ function App() {
           </div>
         </div>
         <h6>
-          <a href="https://github.com/Batsola/" class="link-warning">
+          <a
+            href="https://github.com/Batsola/weather-react"
+            class="link-warning"
+          >
             Open-source code
           </a>
           by Amina Batsola
