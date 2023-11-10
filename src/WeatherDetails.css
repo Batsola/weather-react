@@ -1,0 +1,21 @@
+.currentWeather {
+  text-align: right;
+  padding: 10px 0 0 0;
+}
+#icon {
+  height: 96px;
+  width: 100px;
+  margin: 15px 0 0 0;
+}
+
+.properties {
+  margin: 20px 0px 20px 0px;
+}
+
+#description {
+  text-transform: capitalize;
+}
+#month {
+  font-size: 20px;
+  color: #fff;
+}

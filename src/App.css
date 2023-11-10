@@ -1,0 +1,43 @@
+body {
+  background-color: #2d282b;
+}
+ul {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+li {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  position: relative;
+  top: 72px;
+}
+h1 {
+  padding: 5px;
+  font-family: "Carter One", cursive;
+  font-size: 30px;
+  color: #fff;
+  margin: 0 0 37px 0;
+  background-color: black;
+
+  opacity: 0.6;
+}
+
+h6 {
+  font-size: 12px;
+  padding-top: 10px;
+  color: #fff;
+}
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  background-image: linear-gradient(#f0b86e, #ed7b7b, #836096);
+  max-width: 600px;
+  margin: 30px auto 0;
+  padding: 20px;
+  border: 1px solid #dadde1;
+  border-radius: 10px;
+}
