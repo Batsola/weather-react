@@ -1,14 +1,38 @@
-import logo from "./logo.svg";
+
+import React from "react";
+
+import WeatherSearch from "./WeatherSearch";
+import GeneralWeather from "./GeneralWeather";
+import WeatherDetails from "./WeatherDetails";
+import WeatherForecast from "./WeatherForecast";
+
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Hello World</h1>
-      </header>
+      <div className="weather-app-container">
+        <div className="weather-app">
+          <WeatherSearch />
+
+          <div className="container">
+            <div className="row">
+              <GeneralWeather />
+              <WeatherDetails />
+            </div>
+          </div>
+          <div className="weather-forecast" id="forecast">
+            <WeatherForecast />
+          </div>
+        </div>
+        <h6>
+          <a href="https://github.com/Batsola/weather-react" target="_blank">
+            Open-source code{" "}
+          </a>
+          by Amina Batsola
+        </h6>
+      </div>
     </div>
   );
 }
 
-export default App;

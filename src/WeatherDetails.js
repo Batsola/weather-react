@@ -3,16 +3,16 @@ import "./WeatherDetails.css";
 
 export default function WeatherDetails() {
   return (
-    <div class="col-md-6 currentWeather">
-      <div class="row">
-        <div class="col-md-6">
+    <div className="col-md-6 currentWeather">
+      <div className="row">
+        <div className="col-md-6">
           <img
             src="https://openweathermap.org/img/wn/04d@2x.png"
             alt=""
             id="icon"
           />
         </div>
-        <div class="col-md-6 properties">
+        <div className="col-md-6 properties">
           <div>
             Humidity: <span id="humidity">30</span>%
           </div>

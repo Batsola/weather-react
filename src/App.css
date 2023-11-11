@@ -19,9 +19,7 @@ h1 {
   font-size: 30px;
   color: #fff;
   margin: 0 0 37px 0;
-  background-color: black;
 
-  opacity: 0.6;
 }
 
 h6 {
@@ -29,7 +27,7 @@ h6 {
   padding-top: 10px;
   color: #fff;
 }
-.weather-app-wrapper {
+.weather-app-container {
   max-width: 600px;
   margin: 30px auto;
 }
