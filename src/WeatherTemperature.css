@@ -1,4 +1,4 @@
-.general {
+.generalWeather {
   border-style: dotted;
   border-width: 5px;
   border-color: black;
@@ -9,7 +9,7 @@
   padding: 0 20px 0 0;
   color: #fff;
 }
-#temperature {
+.temperature {
   font-size: 50px;
   font-family: "Carter One", cursive;
 }

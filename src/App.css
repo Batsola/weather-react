@@ -1,31 +1,14 @@
 body {
   background-color: #2d282b;
 }
-ul {
-  margin: 0 auto;
-  padding: 0 auto;
-}
-li {
-  list-style-type: none;
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 auto;
-  position: relative;
-  top: 72px;
-}
-h1 {
-  padding: 5px;
-  font-family: "Carter One", cursive;
-  font-size: 30px;
-  color: #fff;
-  margin: 0 0 37px 0;
 
-}
-
-h6 {
+footer {
   font-size: 12px;
   padding-top: 10px;
   color: #fff;
+}
+footer a {
+  text-decoration: none;
 }
 .weather-app-container {
   max-width: 600px;
