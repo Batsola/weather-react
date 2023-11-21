@@ -28,9 +28,9 @@ export default function WeatherTemperature(props) {
             <span className="temperature">{Math.round(props.celsius)}</span>
             <span className="units">
               °C | {""}
-              <a href="#" onClick={showFahrenheit} role="button" tabIndex="0">
+              <button href="#" onClick={showFahrenheit}>
                 F{" "}
-              </a>
+              </button>
               |
             </span>
           </li>
@@ -49,9 +49,9 @@ export default function WeatherTemperature(props) {
           <li>
             <span className="temperature">{Math.round(fahrenheit())}</span>
             <span className="units">
-              <a href="#" onClick={showCelsius} role="button" tabIndex="0">
+              <button href="#" onClick={showCelsius}>
                 °C
-              </a>
+              </button>
               | F
             </span>
           </li>
