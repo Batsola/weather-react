@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
 import "./WeatherTemperature.css";
 
-
 export default function WeatherTemperature(props) {
   const [unit, setUnit] = useState("celsius");
   function showFahrenheit(event) {
@@ -29,7 +28,7 @@ export default function WeatherTemperature(props) {
             <span className="temperature">{Math.round(props.celsius)}</span>
             <span className="units">
               °C | {""}
-              <a href="#" onClick={showFahrenheit}>
+              <a href="#" onClick={showFahrenheit} role="button" tabIndex="0">
                 F{" "}
               </a>
               |
@@ -50,7 +49,7 @@ export default function WeatherTemperature(props) {
           <li>
             <span className="temperature">{Math.round(fahrenheit())}</span>
             <span className="units">
-              <a href="#" onClick={showCelsius}>
+              <a href="#" onClick={showCelsius} role="button" tabIndex="0">
                 °C
               </a>
               | F
