@@ -8,6 +8,18 @@ li {
   position: relative;
   top: 72px;
 }
+h1 {
+  padding: 5px;
+  font-family: "Carter One", cursive;
+  font-size: 30px;
+  color: #fff;
+  margin: 0 0 37px 0;
+}
+canvas {
+  height: 96px;
+ 
+  margin: 15px 0 0 0;
+}
 
 .searchBar {
   padding-left: 40%;
@@ -18,3 +30,4 @@ li {
   font-style: italic;
   text-align: right;
 }
+

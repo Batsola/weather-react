@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import WeatherDetails from "./WeatherDetails";
-import WeatherForecast from "./WeatherForecast";
+import WeatherTemperature from "./WeatherTemperature";
 import axios from "axios";
 import "./Weather.css";
-import WeatherTemperature from "./WeatherTemperature";
+
+
 
 export default function Weather(props) {
   const [weatherData, setweatherData] = useState({ ready: false });
@@ -32,14 +33,14 @@ export default function Weather(props) {
   }
 
   function search() {
-    const apiKey = "fed392df73b956dce9204cf62bb5cbeb";
+    const apiKey = "bd5b4461863eddaa6ced0a0a67989e0a";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
   if (weatherData.ready) {
     return (
-      <div className="weather-app">
+      <div className="weather">
         <div className="searchBar">
           <form action="#" id="search-form" onSubmit={handleSubmit}>
             <div className="p-2 bg-light rounded rounded-pill shadow-sm mb-4 border border-danger border-1">
@@ -70,17 +71,14 @@ export default function Weather(props) {
 
         <div className="container">
           <div className="row">
-            <WeatherTemperature />
+            <WeatherTemperature celsius={props.data.temperature} />
             <WeatherDetails data={weatherData} />
           </div>
-        </div>
-        <div className="weather-forecast" id="forecast">
-          <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
       </div>
     );
   } else {
     search();
-    return "Loading...";
+    return <div>Loading...</div>;
   }
 }

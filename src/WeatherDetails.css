@@ -1,19 +1,7 @@
-h1 {
-  padding: 5px;
-  font-family: "Carter One", cursive;
-  font-size: 30px;
-  color: #fff;
-  margin: 0 0 37px 0;
 
-}
 .weatherInfo {
   text-align: right;
   padding: 10px 0 0 0;
-}
-canvas {
-  height: 96px;
-  width: 100px;
-  margin: 15px 0 0 0;
 }
 
 .properties {
