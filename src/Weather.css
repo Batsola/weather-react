@@ -20,8 +20,7 @@ canvas {
  
   margin: 15px 0 0 0;
 }
-
-.searchBar {
+.requestCity {
   padding-left: 40%;
 }
 .form-control::placeholder {

@@ -4,8 +4,6 @@ import WeatherTemperature from "./WeatherTemperature";
 import axios from "axios";
 import "./Weather.css";
 
-
-
 export default function Weather(props) {
   const [weatherData, setweatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
@@ -14,11 +12,11 @@ export default function Weather(props) {
     setweatherData({
       ready: true,
       temperature: response.data.main.temp,
-      humidity: response.data.main.wind.humidity,
+      humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
-      wind: response.data.main.wind.speed,
+      wind: response.data.wind.speed,
       city: response.data.name,
     });
   }
@@ -41,7 +39,7 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div className="weather">
-        <div className="searchBar">
+        <div className="requestCity">
           <form action="#" id="search-form" onSubmit={handleSubmit}>
             <div className="p-2 bg-light rounded rounded-pill shadow-sm mb-4 border border-danger border-1">
               <div className="input-group">
@@ -71,7 +69,7 @@ export default function Weather(props) {
 
         <div className="container">
           <div className="row">
-            <WeatherTemperature celsius={props.data.temperature} />
+            <WeatherTemperature celsius={weatherData.temperature} />
             <WeatherDetails data={weatherData} />
           </div>
         </div>
