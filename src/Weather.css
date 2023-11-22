@@ -13,12 +13,11 @@ h1 {
   font-family: "Carter One", cursive;
   font-size: 30px;
   color: #fff;
-  margin: 0 0 37px 0;
+ 
 }
 canvas {
-  height: 96px;
- 
-  margin: 15px 0 0 0;
+  height: 90px;
+  margin: 0 auto ;
 }
 .requestCity {
   padding-left: 40%;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import WeatherDetails from "./WeatherDetails";
 import WeatherTemperature from "./WeatherTemperature";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 import "./Weather.css";
 
@@ -41,7 +42,7 @@ export default function Weather(props) {
       <div className="weather">
         <div className="requestCity">
           <form action="#" id="search-form" onSubmit={handleSubmit}>
-            <div className="p-2 bg-light rounded rounded-pill shadow-sm mb-4 border border-danger border-1">
+            <div className="p-2 bg-light rounded rounded-pill shadow-sm mb-4 border border-primary border-1">
               <div className="input-group">
                 <input
                   type="search"
@@ -49,8 +50,8 @@ export default function Weather(props) {
                   placeholder="Type a city..."
                   aria-describedby="button-addon1"
                   className="form-control border-0 bg-light"
-                  autocomplete="off"
-                  autofocus="on"
+                  autoComplete="off"
+                  autoFocus="on"
                   onChange={handleCityChange}
                 />
                 <div className="input-group-append icon">
@@ -69,7 +70,17 @@ export default function Weather(props) {
 
         <div className="container">
           <div className="row">
-            <WeatherTemperature celsius={weatherData.temperature} />
+            <div className="col-md-6 generalWeather ">
+              <ul>
+                <li>
+                  <span className="date">
+                    <FormattedDate date={weatherData.date} />
+                  </span>
+                </li>
+                <WeatherTemperature celsius={weatherData.temperature} />
+              </ul>
+            </div>
+
             <WeatherDetails data={weatherData} />
           </div>
         </div>

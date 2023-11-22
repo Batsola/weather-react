@@ -9,10 +9,18 @@ export default function App() {
     <div className="App">
       <div className="weather-app-container">
         <div className="weather-app">
-          <Weather defaultCity={"Tokyo"} />
+          <Weather defaultCity={"Antananarivo"} />
           <WeatherForecast />
           <footer>
-            This project was coded by Amina Batsola and is open-sourced on {""}
+            This project was coded by{" "}
+            <a
+              href="mailto:aminabatsolaraz@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Amina Batsola {""}
+            </a>
+            and is open-sourced on {""}
             <a
               href="https://github.com/Batsola/weather-react"
               target="_blank"
@@ -20,7 +28,7 @@ export default function App() {
             >
               Github
             </a>
-            and hosted on {""}
+            {""} and hosted on {""}
             <a
               href="https://phenomenal-cucurucho-e39c93.netlify.app/"
               target="_blank"
