@@ -3,8 +3,9 @@ import WeatherDetails from "./WeatherDetails";
 import WeatherTemperature from "./WeatherTemperature";
 import FormattedDate from "./FormattedDate";
 import axios from "axios";
-import "./Weather.css";
 
+import WeatherForecast from "./WeatherForecast";
+import "./Weather.css";
 export default function Weather(props) {
   const [weatherData, setweatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
@@ -12,6 +13,7 @@ export default function Weather(props) {
   function handleResponse(response) {
     setweatherData({
       ready: true,
+      coordinates: response.data.coord,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       date: new Date(response.data.dt * 1000),
@@ -84,6 +86,7 @@ export default function Weather(props) {
             <WeatherDetails data={weatherData} />
           </div>
         </div>
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

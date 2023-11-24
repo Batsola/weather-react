@@ -1,14 +1,15 @@
-.weather-forecast {
+.weatherForecast {
   margin-top: 20px;
   text-align: center;
   color: black;
 }
-.weather-forecast-date {
+.weatherForecast-day {
   font-size: 18px;
+
 }
-.weather-forecast-temperature-min {
+.weatherForecast-temperature-min {
   opacity: 0.7;
 }
-.weather-forecast-temperatures {
+.weatherForecast-temperatures {
   font-size: 13px;
 }
