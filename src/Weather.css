@@ -12,12 +12,13 @@ h1 {
   padding: 5px;
   font-family: "Carter One", cursive;
   font-size: 30px;
-  color: #fff;
- 
+  color: #2F8DB3;
 }
 canvas {
-  height: 90px;
-  margin: 0 auto ;
+  height: 50px;
+  width: 50px;
+  margin: 15px 0 0 0;
+  
 }
 .requestCity {
   padding-left: 40%;
@@ -28,4 +29,3 @@ canvas {
   font-style: italic;
   text-align: right;
 }
-

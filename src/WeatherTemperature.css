@@ -1,7 +1,7 @@
 .generalWeather {
   border-style: dotted;
   border-width: 5px;
-  border-color: black;
+  border-color: #2F8DB3;
   width: 233px;
   height: 244px;
   border-radius: 50%;
@@ -12,13 +12,13 @@
 .temperature {
   font-size: 50px;
   font-family: "Carter One", cursive;
- color: #fff;
+ color: #2F8DB3;
 }
 
 .units {
   position: relative;
   top: -35px;
-  color: #fff;
+  color: #2F8DB3;
   
 }
 button {
